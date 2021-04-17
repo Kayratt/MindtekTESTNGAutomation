@@ -29,7 +29,7 @@ public class StoreAppSignUpTest extends TestBase {
 
         };
     }
-     @Test(dataProvider="signUpTestData",priority = 1)
+     @Test(dataProvider="signUpTestData",priority = 1, groups ={"regression", "smoke"})
     public void signUpTest(String firstName,String lastName,String password, String Day, String month, String year,
                            String address, String city, String state, String postcode, String mobileNumber){
         StoreAppHomePage storeAppHomePage= new StoreAppHomePage();
@@ -59,7 +59,7 @@ public class StoreAppSignUpTest extends TestBase {
         Assert.assertEquals(actualTitle,expectedTitle,"Actual Title "+actualTitle+
                 " didn't match with expected title"+expectedTitle);
     }
-    @Test(priority = 2)
+    @Test(priority = 2, groups ={"regression","smoke"})
     public void signInTest(){
         driver.get(Configuration.getProperty("StoreURL"));
         StoreAppHomePage storeAppHomePage = new StoreAppHomePage();

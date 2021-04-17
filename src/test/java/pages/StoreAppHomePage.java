@@ -15,4 +15,13 @@ public class StoreAppHomePage {
     @FindBy(xpath ="//a[@class='login']")
     public WebElement signInButton;
 
+    @FindBy(xpath = "//li[@class='youtube']")
+    public WebElement youtubeButton;
+
+    @FindBy(xpath = "//li[@class='facebook']")
+    public WebElement facebookButton;
+
+    @FindBy(xpath ="(//a[@href='http://automationpractice.com/index.php?id_category=3&controller=category'])[1]")
+    public WebElement womenButton;
+
 }

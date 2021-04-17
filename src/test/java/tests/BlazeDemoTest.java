@@ -12,7 +12,7 @@ import utilities.TestBase;
 public class BlazeDemoTest extends TestBase {
 
 
-    @Test
+    @Test(groups = {"regression"})
     public void test(){
         BlazeDemoHomepage blazeDemoHomepage = new BlazeDemoHomepage();
         driver.get(Configuration.getProperty("BlazeDemoURL"));
